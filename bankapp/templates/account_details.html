@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details - SBI Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="navbar-brand">SBI Bank</h2>
+            <ul class="navbar-menu">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="account-details-container">
+            <h1>Account Details</h1>
+            
+            <div class="details-card">
+                <h2>Personal Information</h2>
+                <div class="detail-row">
+                    <span class="label">Account Holder Name:</span>
+                    <span class="value">{{ account.account_holder }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Account Number:</span>
+                    <span class="value">{{ account.account_no }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Account Type:</span>
+                    <span class="value">{{ account.account_type }}</span>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h2>Bank Information</h2>
+                <div class="detail-row">
+                    <span class="label">Bank Name:</span>
+                    <span class="value">{{ account.bank_name }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Branch Location:</span>
+                    <span class="value">{{ account.branch }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">IFSC Code:</span>
+                    <span class="value">{{ account.ifsc }}</span>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h2>Account Balance</h2>
+                <div class="balance-info-large">
+                    <span class="label">Current Balance:</span>
+                    <span class="balance-value">Rs. {{ account.balance }}</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="/dashboard" class="btn btn-secondary">Back to Dashboard</a>
+                <a href="/deposit" class="btn btn-success">Deposit</a>
+                <a href="/withdraw" class="btn btn-warning">Withdraw</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
