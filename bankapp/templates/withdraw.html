@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw - SBI Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="navbar-brand">SBI Bank</h2>
+            <ul class="navbar-menu">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Withdraw Money</h1>
+            
+            {% if message %}
+                <div class="alert alert-warning">{{ message }}</div>
+            {% endif %}
+
+            <div class="balance-info">
+                <p><strong>Current Balance: Rs. {{ balance }}</strong></p>
+            </div>
+
+            <form method="POST" action="/withdraw">
+                <div class="form-group">
+                    <label for="amount">Withdrawal Amount (Rs.):</label>
+                    <input type="number" id="amount" name="amount" 
+                           placeholder="Enter amount" min="1" max="{{ balance }}" required>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Withdraw</button>
+                <a href="/dashboard" class="btn btn-secondary">Back to Dashboard</a>
+            </form>
+
+            <div class="info-box">
+                <h4>Information:</h4>
+                <ul>
+                    <li>Minimum withdrawal: Rs. 1</li>
+                    <li>Maximum withdrawal: Your current balance</li>
+                    <li>Withdrawal is processed instantly</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

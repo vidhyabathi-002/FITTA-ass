@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - SBI Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="navbar-brand">SBI Bank</h2>
+            <ul class="navbar-menu">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="history-container">
+            <h1>Transaction History</h1>
+            
+            {% if history %}
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Transaction Type</th>
+                            <th>Amount</th>
+                            <th>Balance After</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for transaction in history %}
+                            <tr>
+                                <td>{{ transaction.time }}</td>
+                                <td>
+                                    {% if transaction.type == "Deposit" %}
+                                        <span class="badge badge-success">{{ transaction.type }}</span>
+                                    {% else %}
+                                        <span class="badge badge-warning">{{ transaction.type }}</span>
+                                    {% endif %}
+                                </td>
+                                <td>Rs. {{ transaction.amount }}</td>
+                                <td>Rs. {{ transaction.balance }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <div class="alert alert-info">
+                    <p>No transactions yet. Make your first deposit or withdrawal!</p>
+                </div>
+            {% endif %}
+
+            <a href="/dashboard" class="btn btn-secondary">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
