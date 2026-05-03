@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBI Bank Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="bank-header">
+                <h1>SBI Bank</h1>
+                <p>State Bank of India</p>
+            </div>
+            
+            <div class="login-form">
+                <h2>Login to Your Account</h2>
+                
+                {% if error %}
+                    <div class="alert alert-danger">{{ error }}</div>
+                {% endif %}
+                
+                <form method="POST" action="/login">
+                    <div class="form-group">
+                        <label for="pin">Account PIN:</label>
+                        <input type="password" id="pin" name="pin" placeholder="Enter your 4-digit PIN" maxlength="4" required>
+                        <small>Default PIN: 1234</small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                
+                <div class="info-box">
+                    <h4>Demo Credentials:</h4>
+                    <p>Account Holder: Sathish Kumar</p>
+                    <p>PIN: 1234</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

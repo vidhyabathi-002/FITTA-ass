@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SBI Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="navbar-brand">SBI Bank</h2>
+            <ul class="navbar-menu">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/account-details">Account Details</a></li>
+                <li><a href="/logout" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="dashboard">
+            <div class="welcome-section">
+                <h1>Welcome, {{ account.account_holder }}! 👋</h1>
+                <p>Your Banking Dashboard</p>
+            </div>
+
+            <div class="balance-card">
+                <h3>Current Balance</h3>
+                <div class="balance-amount">Rs. {{ account.balance }}</div>
+                <p class="account-number">Account: {{ account.account_no }}</p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="/deposit" class="btn btn-success">Deposit Money</a>
+                <a href="/withdraw" class="btn btn-warning">Withdraw Money</a>
+                <a href="/balance" class="btn btn-info">Check Balance</a>
+                <a href="/history" class="btn btn-secondary">Transaction History</a>
+            </div>
+
+            <div class="account-summary">
+                <h3>Account Summary</h3>
+                <table>
+                    <tr>
+                        <td><strong>Account Holder:</strong></td>
+                        <td>{{ account.account_holder }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Account Type:</strong></td>
+                        <td>{{ account.account_type }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bank Name:</strong></td>
+                        <td>{{ account.bank_name }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Branch:</strong></td>
+                        <td>{{ account.branch }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IFSC Code:</strong></td>
+                        <td>{{ account.ifsc }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
