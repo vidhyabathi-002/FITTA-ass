@@ -6,10 +6,7 @@ A full-featured web-based banking application built with Flask. This application
 
 code run command :
 
-
-cd "C:\Users\VIDHYABATHI K\OneDrive\Desktop\FITA ass"; .\.venv\Scripts\Activate.ps1; cd bankapp; python app.py
-
-
+> cd "C:\Users\VIDHYABATHI K\OneDrive\Desktop\FITA ass"; .\.venv\Scripts\Activate.ps1; cd bankapp; python app.py
 
 - Login/Authentication: Secure PIN-based login system
 - Dashboard: Main hub with quick access to all banking features
