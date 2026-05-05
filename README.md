@@ -36,3 +36,10 @@ the algorithem explore this game paly sertine death to evaluvate potentialoutcom
 **optimal stagergy**
 
 the goal is to determine to best poiible best move for the current  palyer  assuming the oppenent  will also play optimaly to maximixe there own out come
+
+**CHARECTORISTIC OF ADVERSIAL SEARCH:**
+
+* two are more players
+* environmental fully  sequentialmaner
+* ofend model as zero sum game
+*
