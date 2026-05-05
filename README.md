@@ -22,3 +22,17 @@ Examples:
 * chess
 * tic-tac-toe
 * checkers
+
+**MAIN KEY CONCEPTS:**
+
+1. compitative enviroment
+2. game treee
+3. optimal stagergy
+
+the problem is formalize by creating the tree where nods represents game states and edges represent  possible moves
+
+the algorithem explore this game paly sertine death to evaluvate potentialoutcomes
+
+**optimal stagergy**
+
+the goal is to determine to best poiible best move for the current  palyer  assuming the oppenent  will also play optimaly to maximixe there own out come
