@@ -10,3 +10,15 @@
 * its mainly applyed in game playing environmets where one agents gain is another agents loss
 * in machine learning and artificial intelligence adversial search used to determine the best possible move like consider the oppenent
 * the core opproach models problem as a game  play used algorithm like **min max and alpha beta pruning** to find the optimal move by anticipating  oppenent reaction
+
+**DETERMINISTIC GAME :**
+
+* the rules always produce the same result for the same move in the same situation
+* there is no randomness or chance involved
+* if you replay the same moves from the same starting position, you get the same outcome every time
+
+Examples:
+
+* chess
+* tic-tac-toe
+* checkers
