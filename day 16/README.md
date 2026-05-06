@@ -13,3 +13,31 @@
 9. TEACHER DETILES        : Create a class Teacher with constructor to initialize name and subject. Display teacher details.
 10. BIKE DETAILES               : Create a class Bike with constructor to initialize model and price. Print bike details.
 
+## CONSTRAINT SATISFACTION PROBLEM(CSP):
+
+* is a problem where a set of variable must be assigned values that satisfy a number of constraines
+* used in AI  and ML  for solving  combinatorial
+
+## COMPONENTS OF CSP:
+
+**1.VARIABLES(X):**
+             >>>    (X={X_1,X_2.........,X_N})
+
+    >>> EXAMPLE : subject. time slots,colors
+
+**2.DOMINES(D):**
+
+* each variable has a dommine  of possible values
+*  (D_i={V_1,V_2.......V_K})
+
+**3.CONSTRAINTS(C):**
+
+* restrictions of the values  that variables can take
+* can be unary,binary,or higher-order
+
+**FORMULA:**
+
+**REPRESENTATION:**
+
+CSP=(X,D,C)
+
