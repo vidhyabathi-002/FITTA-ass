@@ -41,3 +41,25 @@
 
 CSP=(X,D,C)
 
+## TYPES OF CONSTRAINTS:
+
+1. **unary constraint:**
+   restricts one variable
+   example: X!= RED
+2. **BINARY CONSTRAINTS:**
+   between two variable
+   example: X!= Y
+3. **GLOBAL CONSTARINES :**
+   involve multiple variable
+   example:all diff - constraints 
+
+
+**CONSTRAINT GRAPS:**
+               csp can be represented  using  a constraint graphs
+
+**BASIC ALGORITHMS:**
+
+* assining the variable
+* check the constraints
+* if voilation ------>backtrack
+* continue untile the  sollution found
