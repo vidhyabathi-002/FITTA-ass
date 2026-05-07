@@ -21,3 +21,20 @@ operater overloading allows same operater to have diff meaning difending on the 
 
 * Same function name
 * Different parameters (type or number)
+
+```
+
+class Calculator:
+
+    # Method Overloading
+    def add(self, a, b, c=0):
+        print(a + b + c)
+
+
+c = Calculator()
+
+c.add(10, 20)
+c.add(10, 20, 30)
+
+
+```
