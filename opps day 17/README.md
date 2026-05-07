@@ -68,3 +68,35 @@ d = Dog()
 d.sound()
 
 ```
+
+# ABSTRACTION:
+
+the pinomenon of the  hiding the complex implementation detailes while exposing the only
+
+in python to acchive the abstrction we use the abstract class and abstract method
+
+#### abstract class:
+
+* in python abstrct class is a class that cont be implemented on any functionalitys and its decided to be a blueprint of the other classs
+
+#### ABSTRACT METHOD :
+
+* an abstract method in python in python is method declear the abstrct clas but doest provied the implementation  to declear in abstrct method in python we should use the decarator called @abstract method
+
+
+## Real-Time Example
+
+## ATM Machine
+
+When you use an ATM:
+
+* You insert card
+* Enter PIN
+* Withdraw money
+
+You do NOT know:
+
+* How server works
+* How transaction happens internally
+
+This is called abstraction
