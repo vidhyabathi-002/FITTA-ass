@@ -38,3 +38,33 @@ c.add(10, 20, 30)
 
 
 ```
+
+# 2. Run Time Polymorphism
+
+## Definition
+
+The method call is decided during the  **program execution (runtime)** .
+
+It is achieved using:
+
+* Method Overriding
+
+```
+class Animal:
+
+    def sound(self):
+        print("Animals make sounds")
+
+
+class Dog(Animal):
+
+    # Overriding
+    def sound(self):
+        print("Dog barks")
+
+
+d = Dog()
+
+d.sound()
+
+```
