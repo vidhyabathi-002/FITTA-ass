@@ -8,3 +8,16 @@
 >
 > * COMPILE TIME
 > * RUN TIME
+
+### 1. Compile-time Polymorphism (Static)
+
+Also called  **method overloading** .
+
+> itsa programing technniques that allows multiple functions to have the same name but diff implementation  if   with perform method overloading
+>
+> python will perform method overiding because of  dynamic memory
+
+operater overloading allows same operater to have diff meaning difending on the object operation
+
+* Same function name
+* Different parameters (type or number)
