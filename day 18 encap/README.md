@@ -37,3 +37,22 @@ Steps to convert a loop into recursion:
 2. Write the termination condition, which is the opposite of the loop condition.
 3. Write the program logic.
 4. Call the same function with the next argument value.
+
+## Function
+
+There are two common types of functions:
+
+1. Built-in functions
+2. User-defined functions
+
+Built-in functions are predefined by Python, such as `input()`, `print()`, `id()`, and `chr()`.
+
+User-defined functions are programming blocks created by the user.
+
+```python
+def function_name(arg):
+    function_statement_block
+    return value
+
+function_name(arg)
+```
