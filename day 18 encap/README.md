@@ -20,3 +20,20 @@ Getter and setter methods are used for:
 - Validation
 - Controlled access
 - Encapsulation
+
+## Recursion
+
+Recursion is the process of a function calling itself until the termination condition becomes true.
+
+```python
+def function_name(argument):
+    if condition:
+        return value
+```
+
+Steps to convert a loop into recursion:
+
+1. Initialize the looping variable in the function arguments.
+2. Write the termination condition, which is the opposite of the loop condition.
+3. Write the program logic.
+4. Call the same function with the next argument value.
