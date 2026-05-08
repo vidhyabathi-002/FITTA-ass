@@ -56,3 +56,24 @@ def function_name(arg):
 
 function_name(arg)
 ```
+
+Important function terms:
+
+- `def` is the keyword used to create a function.
+- Function name is the identifier given to the function block.
+- Formal arguments are used in the function declaration.
+- Actual arguments are used in the function call.
+- `return` ends the function and sends a result back to the call.
+
+Advantages of functions:
+
+- Code reusability
+- Reduced program size
+- Memory saving
+- Improved efficiency
+
+Transfer statements:
+
+- `break` stops the complete iteration based on a condition.
+- `continue` skips the current iteration and moves to the next one.
+- `pass` is used as an empty placeholder statement.
