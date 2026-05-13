@@ -35,3 +35,22 @@ print(next(gen))
 
 ```
 
+
+# DECORATOR:
+
+its a function  and extern   its functionality and return the modifiyed function with externded  functionality
+
+the main objective of the decorator  is for improving the  functionality of exiting function without changing the original function
+
+**SYNTAX:**
+
+```
+def decorator function_name(arguments):     ##inputs 
+
+          def outputfunction_name(arguments):
+                    externded  function statement 
+          return output function_name 
+def  function_name(arguments):
+          function statement block
+function_name(argumrnts)
+```
