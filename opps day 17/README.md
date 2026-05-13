@@ -47,7 +47,7 @@ The method call is decided during the  **program execution (runtime)** .
 
 It is achieved using:
 
-* Method Overriding
+* **Method Overriding**
 
 ```
 class Animal:
@@ -82,7 +82,6 @@ in python to acchive the abstrction we use the abstract class and abstract metho
 #### ABSTRACT METHOD :
 
 * an abstract method in python in python is method declear the abstrct clas but doest provied the implementation  to declear in abstrct method in python we should use the decarator called @abstract method
-
 
 ## Real-Time Example
 
